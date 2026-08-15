@@ -139,31 +139,43 @@ body{
     max-width: 520px;
 }
 
-/* .head-sect1 h1{
-    font-size: 3rem;
+.head-sect1 h1{
+     font-size: 2.5rem;
     color: #0e5cac;
+    line-height: 1.1;
+    margin: 0;
 }
 
-.head-sect1 h6{
+.head-sect1 p {
     color: #0e5cac;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.headbut button{
+.headbut {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.headbut button {
     background-color: #0e5cac;
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding:10px 13px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-#explore{
+.explore{
     background-color: #fff;
     border: 2px solid #0e5cac;
     color: #0e5cac;
 
-} */
+}
 
 @media (max-width: 768px) {
     .header {
@@ -176,6 +188,14 @@ body{
 
     .head-sect1 {
         align-items: center;
+    }
+
+    .head-sect1 h1 {
+        font-size: 2rem;
+    }
+
+     .head-sect1 p {
+        max-width: 400px;
     }
 
     .header > img {
