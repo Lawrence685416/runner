@@ -117,11 +117,11 @@ body{
 }
 
 .header{
-  width: 90%;
+   width: 90%;
     max-width: 1200px;
-    margin: 1rem auto 0;
-    min-height: 55vh;
-
+    margin: 0 auto;
+    min-height: auto;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
