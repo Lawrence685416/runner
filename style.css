@@ -194,6 +194,7 @@ body{
 
     .head-sect1 h1 {
         font-size: 2rem;
+        text-align: left;
     }
 
     .head-sect1 p {
