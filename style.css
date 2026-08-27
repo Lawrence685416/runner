@@ -694,6 +694,7 @@ footer {
         position: absolute;
         top: 70px;
         left: 0;
+        background-color: red;
         
 
         width: 100%;
@@ -708,6 +709,7 @@ footer {
 
     .navbar nav.show {
         display: flex;
+
     }
 
     .nav-actions {
