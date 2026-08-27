@@ -677,6 +677,7 @@ footer {
         width: 90%;
         height: 70px;
         position: relative;
+        background-color: #fff;
     }
 
     .menu-btn {
@@ -693,7 +694,7 @@ footer {
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: #fff;
+        
 
         width: 100%;
 
