@@ -696,7 +696,6 @@ footer {
         left: 0;
         background-color: red;
         
-        height: max-content;
         width: 100%;
 
         flex-direction: column;
@@ -709,6 +708,7 @@ footer {
 
     .navbar nav.show {
         display: flex;
+        background-color: red;
 
     }
 
@@ -726,10 +726,12 @@ footer {
 
         gap: 1rem;
 
+        background-color: red;
         padding: 20px 0;
     }
 
     .nav-actions.show {
+        background-color: red;
         display: flex;
     }
 }
