@@ -1,77 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runner</title>
+
+    <title>Runner - Sneakers</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="nav">
-            <h1 class="logo">RUNNER</h1>
 
-            <div class="menu-toggle" id="menu-toggle">☰</div>
+    <!-- ================= HEADER ================= -->
 
-            <div class="mobile-menu" id="mobile-menu">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Shop</a>
-                <a href="#">About Us</a>
-                <a href="#">Cart 🛒</a>
-                <button>Order Now</button>
-            </div>
+    <header class="navbar">
 
-            <!-- Desktop only -->
-            <div class="nav-center">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Shop</a>
-                <a href="#">About Us</a>
-            </div>
+        <div class="logo">
+            RUNNER
+        </div>
 
-            <div class="nav-right">
-                <a href="#">Cart 🛒</a>
-                <button>Order Now</button>
-            </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Shop</a>
+            <a href="#">About Us</a>
         </nav>
 
-      <div class="header">
-        <div class="head-sect1">
-            <h1>Step Into Confidence.</h1>
-            <p>Built for comfort, durability, and everyday style<br>
-for work, weekends, and everything in between.</p>
-            <div class="headbut">
-                <button>Buy Now</button>
-                <button class="explore">Explore Now</button>
-            </div>
+        <div class="nav-actions">
+            <a href="#" class="cart">Cart 🛒</a>
+            <button>Order Now</button>
         </div>
-        <img src="./img/7.png" alt="">
-        <!-- <div class="head-sect2">
-            <div class="example">
-                <h1>MODEL</h1>
-                <H6>SNEAKERS</H6>
-            </div>
-            <div class="example">
-                <h1>MODEL</h1>
-                <H6>SNEAKERS</H6>
-            </div>
-            <div class="example">
-                <h1>MODEL</h1>
-                <H6>SNEAKERS</H6>
-            </div>
-            <div class="example">
-                <h1>MODEL</h1>
-                <H6>SNEAKERS</H6>
-            </div>
-        </div> -->
-      </div>
 
-    </div>
-    </div>
+        <button class="menu-btn">☰</button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-text">
+
+                    <h1>Step Into Confidence.</h1>
+
+                    <p>
+                        Built for comfort, durability, and everyday style
+                        for work, weekends, and everything in between.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button>Buy Now</button>
+                        <button class="outline-btn">
+                            Explore Collection
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+                    <img src="./img/7.png" alt="Blue Nike sneakers">
+                </div>
+
+            </div>
+
+
+            <!-- INFORMATION BAR -->
+
+            <div class="info-bar">
+
+                <div class="info-item">
+                    <strong>MODEL</strong>
+                    <span>SNEAKERS</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>BRAND</strong>
+                    <span>NIKE</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>COLORS</strong>
+                    <span>WHITE, BLUE</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>PRICE</strong>
+                    <span>$80 USD</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED PRODUCTS ================= -->
+
+        <section class="featured section">
+
+            <h2>Featured Products</h2>
+
+            <div class="products-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card">
+
+                    <div class="product-top">
+                        <h3>Nike Air Max<br>Zoom</h3>
+                        <button class="heart">♡</button>
+                    </div>
+
+                    <img src="./img/5.png" alt="Nike Air Max Zoom">
+
+                    <div class="product-bottom">
+                        <div>
+                            <span>Price</span>
+                            <strong>$59.40</strong>
+                        </div>
+
+                        <button class="cart-btn">🛒</button>
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card">
+
+                    <div class="product-top">
+                        <h3>Nike Flyknit<br>Racer</h3>
+                        <button class="heart">♡</button>
+                    </div>
+
+                    <img src="./img/4.png" alt="Nike Flyknit Racer">
+
+                    <div class="product-bottom">
+                        <div>
+                            <span>Price</span>
+                            <strong>$56.40</strong>
+                        </div>
+
+                        <button class="cart-btn">🛒</button>
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card">
+
+                    <div class="product-top">
+                        <h3>Nike Air<br>Vapormax</h3>
+                        <button class="heart">♡</button>
+                    </div>
+
+                    <img src="./img/6.png" alt="Nike Air Vapormax">
+
+                    <div class="product-bottom">
+                        <div>
+                            <span>Price</span>
+                            <strong>$98.40</strong>
+                        </div>
+
+                        <button class="cart-btn">🛒</button>
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card">
+
+                    <div class="product-top">
+                        <h3>Nike Pegasus<br>Trail</h3>
+                        <button class="heart">♡</button>
+                    </div>
+
+                    <img src="./img/2.png" alt="Nike Pegasus Trail">
+
+                    <div class="product-bottom">
+                        <div>
+                            <span>Price</span>
+                            <strong>$67.40</strong>
+                        </div>
+
+                        <button class="cart-btn">🛒</button>
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div class="product-card">
+
+                    <div class="product-top">
+                        <h3>Nike React<br>Infinity</h3>
+                        <button class="heart">♡</button>
+                    </div>
+
+                    <img src="./img/3.png" alt="Nike React Infinity">
+
+                    <div class="product-bottom">
+                        <div>
+                            <span>Price</span>
+                            <strong>$78.40</strong>
+                        </div>
+
+                        <button class="cart-btn">🛒</button>
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div class="product-card">
+
+                    <div class="product-top">
+                        <h3>Nike Free<br>RN 5.0</h3>
+                        <button class="heart">♡</button>
+                    </div>
+
+                    <img src="./img/1.png" alt="Nike Free RN 5.0">
+
+                    <div class="product-bottom">
+                        <div>
+                            <span>Price</span>
+                            <strong>$45.40</strong>
+                        </div>
+
+                        <button class="cart-btn">🛒</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCT HIGHLIGHT ================= -->
+
+        <section class="highlight section">
+
+            <h2>PRODUCT HIGHLIGHT</h2>
+
+            <div class="highlight-title">
+                <h3>NIKE REACT INFINITY</h3>
+                <p>Well-Versed Commerce</p>
+            </div>
+
+
+            <div class="highlight-content">
+
+
+                <!-- MAIN PRODUCT -->
+
+                <div class="highlight-main">
+
+                    <img src="./img/3.png"
+                         alt="Nike React Infinity">
+
+                </div>
+
+
+                <!-- SMALL PRODUCTS -->
+
+                <div class="highlight-thumbnails">
+
+                    <img src="./img/6.png"
+                         alt="Nike Air Vapormax">
+
+                    <img src="./img/1.png"
+                         alt="Nike Free RN 5.0">
+
+                </div>
+
+
+                <!-- PRODUCT DETAILS -->
+
+                <div class="product-details">
+
+                    <h3>$78.40</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <h4>Choose a size</h4>
+
+                    <div class="sizes">
+                        <button>SM</button>
+                        <button class="selected">MD</button>
+                        <button>LG</button>
+                        <button>XL</button>
+                    </div>
+
+                    <div class="detail-buttons">
+                        <button>Buy Now</button>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <label>
+                        Select Delivery Location
+                    </label>
+
+                    <div class="delivery">
+                        <input type="text"
+                               placeholder="Enter your location">
+
+                        <button>Apply</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section class="faq section">
+
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="faq-container">
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        How do I choose the right shoe size?
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Check our size guide and compare your
+                            foot measurement with the recommended size.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Are your shoes true to size or should I size up/down?
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Most of our shoes are true to size.
+                            Check the product description for specific
+                            recommendations.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        What materials are used in your shoes?
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Our shoes use a combination of breathable
+                            fabrics, synthetic materials and rubber soles.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        How long does delivery take after placing an order?
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Delivery times depend on your location and
+                            selected delivery option.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Can I return or exchange shoes if they don't fit?
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. You can request a return or exchange
+                            according to our return policy.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta">
+
+            <h2>Upgrade Your Everyday Footwear</h2>
+
+            <p>
+                Experience comfort, durability, and modern design
+                in every step.
+            </p>
+
+            <button>
+                Explore Collection
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-column">
+
+            <h3>Shop</h3>
+
+            <a href="#">Sneakers</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">Sale</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Company</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Careers</a>
+            <a href="#">FAQs</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Trust / Legal</h3>
+
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Returns Policy</a>
+
+        </div>
+
+
+        <div class="footer-column newsletter">
+
+            <h3>Newsletter</h3>
+
+            <p>Get 10% Off Your First Order</p>
+
+            <span>
+                Be the first to learn about new drops
+                and exclusive offers.
+            </span>
+
+            <div class="newsletter-form">
+                <input type="email"
+                       placeholder="Email">
+
+                <button>Subscribe</button>
+            </div>
+
+        </div>
+
+    </footer>
+
+
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>
