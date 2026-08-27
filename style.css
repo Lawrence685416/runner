@@ -696,7 +696,7 @@ footer {
         left: 0;
         background-color: red;
         
-
+        height: max-content;
         width: 100%;
 
         flex-direction: column;
