@@ -34,12 +34,14 @@ a {
 .navbar {
     width: 90%;
     max-width: 1100px;
-    height: 70px;
+    min-height: 70px;
     margin: auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    position: relative;
 }
 
 .logo {
@@ -55,6 +57,8 @@ a {
 }
 
 .navbar nav a {
+    text-decoration: none;
+    color: #222;
     font-size: 0.85rem;
     font-weight: 700;
 }
@@ -65,13 +69,20 @@ a {
     gap: 1rem;
 }
 
+.nav-actions a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.85rem;
+}
+
 .nav-actions button {
     border: none;
     background-color: #0e5cac;
     color: white;
     border-radius: 15px;
-    padding: 6px 12px;
+    padding: 8px 14px;
     font-size: 0.7rem;
+    cursor: pointer;
 }
 
 .menu-btn {
@@ -79,13 +90,52 @@ a {
     border: none;
     background: none;
     font-size: 2rem;
+    cursor: pointer;
 }
 
-.mobile-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: 1;
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+
+        padding: 20px 0;
+    }
+
+    .navbar nav.show {
+        display: flex;
+    }
+
+    .nav-actions {
+        display: none;
+
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding-bottom: 15px;
+    }
+
+    .nav-actions.show {
+        display: flex;
+    }
 }
 
 
@@ -587,10 +637,10 @@ footer {
 /* TABLET */
 
 @media (max-width: 900px) {
-
+/* 
     .navbar nav {
         gap: 1rem;
-    }
+    } */
 
     .hero-content {
         min-height: 330px;
@@ -621,19 +671,65 @@ footer {
 
     /* NAVBAR */
 
-    .navbar {
-        height: 75px;
-    }
+@media (max-width: 768px) {
 
-    .navbar nav,
-    .nav-actions {
-        display: none;
+    .navbar {
+        width: 90%;
+        height: 70px;
+        position: relative;
     }
 
     .menu-btn {
         display: block;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        z-index: 10;
     }
 
+    .navbar nav {
+        display: none;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 1.5rem;
+
+        padding: 30px 0;
+    }
+
+    .navbar nav.show {
+        display: flex;
+    }
+
+    .nav-actions {
+        display: none;
+
+        position: absolute;
+        top: 250px;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 1rem;
+
+        padding: 20px 0;
+    }
+
+    .nav-actions.show {
+        display: flex;
+    }
+}
 
     /* HERO */
 
