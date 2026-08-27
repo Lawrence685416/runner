@@ -677,7 +677,7 @@ footer {
         width: 90%;
         height: 70px;
         position: relative;
-        background-color: red;
+        background-color: #fff;
     }
 
     .menu-btn {
@@ -694,7 +694,7 @@ footer {
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: red;
+        background-color: #fff;
         
         width: 100%;
 
@@ -708,7 +708,7 @@ footer {
 
     .navbar nav.show {
         display: flex;
-        background-color: red;
+        background-color: #fff;
 
     }
 
@@ -726,12 +726,12 @@ footer {
 
         gap: 1rem;
 
-        background-color: red;
+        background-color: #fff;
         padding: 20px 0;
     }
 
     .nav-actions.show {
-        background-color: red;
+        background-color: #fff;
         display: flex;
     }
 }
